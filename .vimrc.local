@@ -77,4 +77,19 @@ noremap <S-Del> "+p
 inoremap <S-Del> <esc>"+pa
 vnoremap <S-Del> d"+P
 
- :map <leader>pp :set invpaste<CR>
+:map <leader>pp :set invpaste<CR>
+
+" colorscheme custom
+set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
+map 0 ^
+" Returns true if paste mode is enabled
+ function! HasPaste()
+     if &paste
+         return 'PASTE MODE  '
+     en
+     return ''
+endfunction
+
+let g:airline#extensions#tabline#enabled = 1
+
+
