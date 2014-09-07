@@ -13,6 +13,7 @@
 
 - neocomplcache
 - YouCompleteMe
+- syntastic  `synatax check`
 - Tagbar
 - PIV `php`
 - EasyMotion
