@@ -28,6 +28,7 @@ colorscheme solarized
 " let g:solarized_hitrail=0
 " let g:solarized_menu=1
 
+let mapleader = ';'
 nmap <space> :
 "把空格映射为：
 Bundle 'vim-scripts/taglist.vim'
@@ -92,3 +93,4 @@ endfunction
 
 let g:airline#extensions#tabline#enabled = 1
                 let g:airline_theme = 'luna'
+let g:spf13_bundle_groups=['general', 'programming', 'misc', 'scala', 'youcompleteme']
