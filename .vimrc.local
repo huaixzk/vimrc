@@ -13,8 +13,12 @@ let g:solarized_termcolors=256    "default value is 16
 syntax enable
 set background=light
 colorscheme solarized
+if has('gui_running')
 "set guifont=Droid\ Sans\ Mono\ 16
 set guifont=Source\ Code\ Pro:h14#
+set background=dark
+let g:airline_theme='solarized'
+endif
 " ------------------------------------------------------------------
 
 " The following items are available options, but do not need to be
@@ -135,7 +139,6 @@ vnoremap <S-Del> d"+P
 map 0 ^
 " Returns true if paste mode is enabled
 let g:airline#extensions#tabline#enabled = 0
-                let g:airline_theme = 'sol'
 
 ""let g:spf13_bundle_groups=['general', 'programming', 'misc', 'scala', 'youcompleteme']
 ""let g:ycm_min_num_of_chars_for_completion = 1
